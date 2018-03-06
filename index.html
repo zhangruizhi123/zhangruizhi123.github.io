@@ -1,525 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>简历</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/html2canvas.js" ></script>
+		<script type="text/javascript" src="js/jspdf.debug.js" ></script>
+	</head>
+	<style>
+		.color_block{
+			color: #EEE;
+		}
+		ul li{list-style: none;}
+		.base_info ul{
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+			text-align: left;
+		}
+		.base_info ul li{
+			padding: 5px;
+		}.base_info ul li:hover{
+			color: #999;
+			cursor: pointer;
+		}
+		.jilen{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		.jilen ul{
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+			text-align: left;
+		}
+		.jilen ul li{
+			padding: 5px;
+		}
+		.jilen ul li:hover{
+			color: #999;
+			cursor: pointer;
+		}
+		.progress{
+			height:15px;
+		}
+		
+		.love{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		.love ul{
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+			text-align: left;
+			padding-top: 10px;
+		}
+		.love ul li{
+			padding: 5px;
+		}
+		.love ul li:hover{
+			color: #999;
+			cursor: pointer;
+		}
+		.content ul li{
+			padding-top: 40px;
+		}
+		.content .title{
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.content .title .text{
+			display: inline-block;
+			width:80%;
+			color: #555;
+			padding-bottom: 3px;
+			border-bottom: 1px solid #999;
+		}
+		.content .context ul{
+			height: 10px;
+			padding: 0px;
+		}
+		.content .context ul .left{
+			float: left;
+		}
+		.content .context ul  li{
+			padding: 10px;
+		}
+		
+@media (max-width: 767px) {
 
-<HTML>
-<HEAD>
-<TITLE>个人主页</TITLE>
-<META http-equiv=Content-Language content=zh-cn>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
-<link rel='icon' href="img/favicon32.ico" type='image/x-ico' /> 
-<LINK href="images/enter.css" type=text/css rel=stylesheet>
-</HEAD>
-<BODY style="BACKGROUND-IMAGE: url(images/2e_bg.jpg)">
-<DIV align=center>
-<TABLE style="BORDER-COLLAPSE: collapse" height=576 cellPadding=0 width=990 border=0>
-  <TR>
-    <TD width=230>
-      <DIV align=center>
-      <TABLE style="BORDER-COLLAPSE: collapse" height=585 cellPadding=0 
-      width=225 border=0>
-        <TR>
-          <TD height=16>
-            <DIV align=left>
-            <TABLE style="BORDER-COLLAPSE: collapse" cellPadding=0 width=206 border=0>
-              <TR>
-                <TD width=13>　</TD>
-                <TD><IMG height=23 src="images/22_top.jpg" width=188 border=0></TD></TR></TABLE></DIV></TD></TR>
-        <TR>
-          <TD>
-            <DIV align=center>
-            <TABLE style="BORDER-COLLAPSE: collapse" height=577 cellPadding=0 width=147 border=0>
-              <TR>
-                <TD height=582>
-                  <DIV align=center>
-                  <TABLE style="BORDER-COLLAPSE: collapse" height=320 cellPadding=0 width=230 border=0>
-                    <TR>
-                      <TD width=14><IMG height=582 src="images/2e_left.jpg" width=14 border=0></TD>
-                      <TD>
-                        <DIV align=center>
-                        <TABLE style="BORDER-COLLAPSE: collapse" height=582 cellPadding=0 width=188 border=0>
-                          <TR>
-                            <TD width=188 
-                            background="images/2e_top.jpg" 
-                            height=434>
-                              <DIV align=center>
-                              <TABLE id=table18 style="BORDER-COLLAPSE: collapse" height=417 cellPadding=0 width=178 border=0>
-                                <TR>
-                                <TD align=middle colSpan=2 height=42>
-                                <OBJECT id=obj5 
-                                codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0 
-                                height=28 width=133 border=0 
-                                classid=clsid:D27CDB6E-AE6D-11CF-96B8-444553540000>
-								<PARAM NAME="movie" VALUE="images/you.swf"><PARAM NAME="menu" VALUE="false">
-								<PARAM NAME="quality" VALUE="High"><PARAM NAME="wmode" VALUE="transparent">
-                                <embed src="images/you.swf" 
-                                pluginspage="http://www.macromedia.com/go/getflashplayer" 
-                                type="application/x-shockwave-flash" name="obj5" 
-                                width="133" height="28" quality="High" 
-                                wmode="transparent"></OBJECT></TD></TR>
-                                <TR>
-                                <TD align=left width=31 height=333>　</TD>
-                                <TD align=left width=147 height=333>
-                                <OBJECT id=obj4 
-                                codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0 
-                                height=288 width=48 border=0 
-                                classid=clsid:D27CDB6E-AE6D-11CF-96B8-444553540000>
-								<PARAM NAME="movie" VALUE="images/e_an_1green.swf">
-								<PARAM NAME="menu" VALUE="false"><PARAM NAME="quality" VALUE="High">
-								<PARAM NAME="wmode" VALUE="transparent">
-                                <embed src="images/e_an_1green.swf" 
-                                pluginspage="http://www.macromedia.com/go/getflashplayer" 
-                                type="application/x-shockwave-flash" name="obj4" 
-                                width="48" height="288" quality="High" 
-                                wmode="transparent"></OBJECT></TD></TR>
-                                <TR>
-                                <TD align=middle colSpan=2>
-                                <TABLE id=table19 
-                                style="BORDER-COLLAPSE: collapse" height=37 
-                                cellPadding=0 width="100%" border=0>
-                                
-                                <TR>
-                                <TD align=middle><FONT 
-                                color=#ffffff><B></B></FONT></TD></TR>
-                                <TR>
-                                <TD align=middle><B><FONT 
-                                color=#ffffff></FONT></B></TD></TR></TABLE></TD></TR></TABLE></DIV></TD></TR>
-                          <TR>
-                            <TD width=188 height=148><IMG height=148 
-                              src="images/2e_down.jpg" width=188 
-                              border=0></TD></TR></TABLE></DIV></TD>
-                      <TD width=28><IMG height=582 
-                        src="images/2e_right.jpg" width=28 
-                        border=0></TD></TR></TABLE></DIV></TD></TR></TABLE></DIV></TD></TR></TABLE></DIV></TD>
-    <TD>
-      <DIV align=center>
-      <TABLE style="BORDER-COLLAPSE: collapse" height=604 cellPadding=0 width=677 border=0>
-        <TR>
-          <TD>
-            <DIV align=center>
-            <TABLE style="BORDER-COLLAPSE: collapse" height=584 cellPadding=0 width=644 border=0>
-              <TR>
-                <TD vAlign=top align=middle width=656 
-                background="images/33e_top1.jpg" colSpan=3 
-                height=17>　</TD></TR>
-              <TR>
-                <TD vAlign=bottom align=middle width=656 
-                background="images/33e_top11.jpg" colSpan=3 
-                height=34>
-                  <OBJECT id=obj2 
-                  codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0 
-                  height=28 width=500 border=0 
-                  classid=clsid:D27CDB6E-AE6D-11CF-96B8-444553540000><PARAM NAME="movie" VALUE="images/fan_1.swf">
-				  <PARAM NAME="menu" VALUE="false"><PARAM NAME="quality" VALUE="High">
-                  <embed src="images/fan_1.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj2" width="500" height="28" quality="High"></OBJECT></TD></TR>
-              <TR>
-                <TD width=13><IMG height=519 src="images/33e_left.jpg" width=13 border=0></TD>
-                <TD width=622 bgColor=#ffffff>
-                  <DIV align=center>
-                  <TABLE style="BORDER-COLLAPSE: collapse" height=518 cellPadding=0 width=600 border=0>
-                    <TR>
-                      <TD width=600 background="" height=209>
-                        <DIV align=center>
-                        <TABLE style="BORDER-COLLAPSE: collapse" height=240 
-                        cellPadding=0 width=600 border=0>
-                          <TR>
-                            <TD background="images/green.jpg">
-                              <OBJECT id=obj3 
-                              codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0 
-                              height=240 width=600 border=0 
-                              classid=clsid:D27CDB6E-AE6D-11CF-96B8-444553540000>
-							  <PARAM NAME="movie" VALUE="images/green.swf"><PARAM NAME="quality" VALUE="High">
-							  <PARAM NAME="wmode" VALUE="transparent">
-                              <embed src="images/green.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj3" width="600" height="240" quality="High" wmode="transparent">
-							  </OBJECT></TD></TR></TABLE></DIV></TD></TR>
-                    <TR>
-                      <TD>
-                        <TABLE id=table2 style="BORDER-COLLAPSE: collapse"  height=275 cellPadding=0 width="100%" border=0>
-                          <TR>
-                            <TD width=15>　</TD>
-                            <TD>
-                              <TABLE id=table10 
-                              style="BORDER-COLLAPSE: collapse" height=279 
-                              cellPadding=0 width=600 border=0>
-                                
-                                <TR>
-                                <TD width=350 height=11></TD>
-                                <TD width=250 height=11></TD></TR>
-                                <TR>
-                                <TD width=350 height=18><A title=更多动画 
-                                href="#" 
-                                target=_parent><IMG height=18 
-                                src="images/2e-m-dh.gif" width=88 
-                                border=0></A></TD>
-                                <TD width=250 height=268 rowSpan=6>
-                                <DIV align=center>
-                                <TABLE id=table31 
-                                style="BORDER-COLLAPSE: collapse" height=264 
-                                cellPadding=0 width=232 border=0>
-                                
-                                <TR>
-                                <TD vAlign=top height=88>
-                                <DIV align=right>
-                                <TABLE id=table42 
-                                style="BORDER-COLLAPSE: collapse" 
-                                borderColor=#c0c0c0 cellPadding=0 width=9 
-                                border=0>
-                                
-                                <TR>
-                                <TD vAlign=top>
-                                <OBJECT id=obj6 
-                                codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0 
-                                height=86 width=212 align=right border=0 
-                                classid=clsid:D27CDB6E-AE6D-11CF-96B8-444553540000>
-								<PARAM NAME="movie" VALUE="images/shijie.swf"><PARAM NAME="menu" VALUE="false">
-								<PARAM NAME="quality" VALUE="High">
-                                <embed src="images/shijie.swf" 
-                                pluginspage="http://www.macromedia.com/go/getflashplayer" 
-                                type="application/x-shockwave-flash" name="obj6" 
-                                width="212" height="86" quality="High" 
-                                menu="false"></OBJECT></TD></TR></TABLE></DIV></TD></TR>
-                                <TR>
-                                <TD height=18>
-                                <TABLE id=table41 
-                                style="BORDER-COLLAPSE: collapse" cellPadding=0 
-                                width="91%" border=0>
-                                
-                                <TR>
-                                <TD width=28>　</TD>
-                                <TD><IMG height=17 
-                                src="images/2e-m-xw.gif" width=71 
-                                border=0></TD></TR></TABLE></TD></TR>
-                                <TR>
-                                <TD>
-                                <TABLE id=table40 
-                                style="BORDER-COLLAPSE: collapse" height=60 
-                                cellPadding=0 width="99%" border=0>
-                                
-                                <TR>
-                                <TD width=24>　</TD>
-                                <TD>
-                                <P style="LINE-HEIGHT: 125%"><FONT 
-                                color=#666666>&nbsp;&#8226; <FONT color=#ff0000>期待2006 
-                                全力倾情打造动漫新境界!</FONT><BR>&nbsp;&#8226; </FONT><FONT 
-                                color=#00ffff><A href="#" 
-                                target=_blank>上海大龙绿化网站开通上线</A></FONT><FONT 
-                                color=#666666><BR>&nbsp;&#8226; <A title="欣 赏" 
-                                href="#" 
-                                target=_blank><FONT color=#008080>新</FONT> 
-                                A3精彩片断(强烈推荐欣赏)</A><BR>&nbsp;&#8226; </FONT><A 
-                                title=欣赏新极品快车 
-                                href="#" 
-                                target=_blank><FONT color=#008080>新</FONT><FONT 
-                                color=#808080> 
-                                三维动画《极品快车》欣赏</FONT></A></P></TD></TR></TABLE></TD></TR>
-                                <TR>
-                                <TD height=15>
-                                <TABLE id=table39 
-                                style="BORDER-COLLAPSE: collapse" cellPadding=0 
-                                width="103%" border=0>
-                                
-                                <TR>
-                                <TD width=28>　</TD>
-                                <TD><A title=更多三维动画 
-                                href="#" 
-                                target=_parent><IMG height=17 
-                                src="images/2e-m-3d.gif" width=57 
-                                border=0></A></TD></TR></TABLE></TD></TR>
-                                <TR>
-                                <TD height=64>
-                                <TABLE id=table38 
-                                style="BORDER-COLLAPSE: collapse" height=76 
-                                cellPadding=0 width=237 border=0>
-                                
-                                <TR>
-                                <TD width=27 height=56>　</TD>
-                                <TD align=middle width=86 height=56><A 
-                                title=欣赏动画 
-                                href="#" 
-                                target=_blank><IMG height=56 
-                                src="images/xx1001.gif" width=82 
-                                border=0></A></TD>
-                                <TD align=middle width=87 height=56><A 
-                                title=欣赏动画 
-                                href="#" 
-                                target=_blank><IMG 
-                                src="images/quan.jpg" 
-                                border=0></A></TD>
-                                <TD width=37 height=56>　</TD></TR>
-                                <TR>
-                                <TD width=27>　</TD>
-                                <TD align=middle width=86><A title=欣赏动画 
-                                href="#" 
-                                target=_blank>backkom熊熊</A></TD>
-                                <TD align=middle width=87><A title=进入欣赏 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#cc0066>全智贤经典广告</FONT></A></TD>
-                                <TD 
-                                width=37>　</TD></TR></TABLE></TD></TR></TABLE></DIV></TD></TR>
-                                <TR>
-                                <TD width=350 height=79>
-                                <TABLE class=x cellSpacing=0 cellPadding=0 
-                                width="100%" border=0>
-                                </TABLE>
-                                <TABLE cellSpacing=0 cellPadding=0 width="100%" 
-                                border=0>
-                                
-                                <TR align=middle>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG height=56 
-                                src="images/200541116272355477.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>贺卡版</FONT></A></TD>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG class=bk1 height=56 
-                                src="images/20054823324343994.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>冬日的期盼</FONT></A></TD>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG class=bk1 height=56 
-                                src="images/2005431332486265.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>天地(预告片)</FONT></A></TD>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG class=bk1 height=56 
-                                src="images/2005431324010055.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>loading</FONT></A></TD></TR>
-                                <TR>
-                                <TD height=0></TR></TABLE></TD></TR>
-                                <TR>
-                                <TD width=350 height=17><A title=更多图片 
-                                href="#" 
-                                target=_parent><IMG height=17 
-                                src="images/2e-m-tp.gif" width=78 
-                                border=0></A></TD></TR>
-                                <TR>
-                                <TD width=350 height=79>
-                                <TABLE class=x cellSpacing=0 cellPadding=0 
-                                width="100%" border=0>
-                                </TABLE>
-                                <TABLE cellSpacing=0 cellPadding=0 width="100%" 
-                                border=0>
-                                
-                                <TR align=middle>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG height=56 
-                                src="images/20054119481077038.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>冬日的期盼II</FONT></A></TD>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG class=bk1 height=56 
-                                src="images/20054823114977499.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>云之曙光</FONT></A></TD>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG class=bk1 height=56 
-                                src="images/20054616104170383.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>冬日的期盼III</FONT></A></TD>
-                                <TD width="25%" height=2>
-                                <TABLE class=bk1 cellSpacing=0 cellPadding=0 
-                                align=center border=0>
-                                
-                                <TR>
-                                <TD height=20><A 
-                                href="#" 
-                                target=_blank><IMG class=bk1 height=56 
-                                src="images/200543128129181.gif" 
-                                width=82 
-                                border=0></A></TD></TR></TABLE><A 
-                                href="#" 
-                                target=_blank><FONT 
-                                color=#999999>云之彼端III</FONT></A></TD></TR>
-                                <TR>
-                                <TD height=0></TR></TABLE></TD></TR>
-                                <TR>
-                                <TD width=350 height=18><IMG height=18 
-                                src="images/2e-m-yy.gif" width=69 
-                                border=0></TD></TR>
-                                <TR>
-                                <TD width=350 height=57>
-                                <TABLE id=table15 
-                                style="BORDER-COLLAPSE: collapse" height=55 
-                                cellPadding=0 width=350 border=0>
-                                
-                                <TR>
-                                <TD width=175>
-                                <TABLE id=table16 
-                                style="BORDER-COLLAPSE: collapse" height=48 
-                                cellPadding=0 width=180 border=0>
-                                
-                                <TR>
-                                <TD width=175>
-                                <TR>
-                                <TD height=16><FONT color=#666666>&nbsp;&#6666;</FONT> 
-                                <A 
-                                href="#" 
-                                target=_blank>森林狂想曲 (推荐)</A></TD></TR>
-                                <TR>
-                                <TD height=16><FONT color=#666666>&nbsp;&#6666;</FONT> 
-                                <A 
-                                href="#" 
-                                target=_blank>流 浪 - Enya恩雅</A></TD></TR></TD>
-                                <TR>
-                                <TD width=5>　</TD></TR></TABLE></TD>
-                                <TD width=175>
-                                <TABLE id=table17 
-                                style="BORDER-COLLAPSE: collapse" height=48 
-                                cellPadding=0 width=180 border=0>
-                                
-                                <TR>
-                                <TD width=175>
-                                <TR>
-                                <TD height=16><FONT color=#808080>&nbsp;&#6666;</FONT> 
-                                <A 
-                                href="#" 
-                                target=_blank>梁 祝-蝴蝶梦(浪漫钢琴曲)</A></TD></TR>
-                                <TR>
-                                <TD height=16><FONT color=#808080>&nbsp;&#6666;</FONT> 
-                                <A 
-                                href="#" 
-                                target=_blank>新 
-                                《bressanon》下载试听</A></TD></TR></TD>
-                                <TR>
-                                <TD 
-                                width=5>　</TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></DIV></TD>
-                <TD width=7><IMG height=519 
-                  src="images/33e_right.jpg" width=21 
-              border=0></TD></TR>
-              <TR>
-                <TD width=644 colSpan=3 height=14><IMG height=15 
-                  src="images/33e_down.jpg" width=656 
-              border=0></TD></TR></TABLE></DIV></TD></TR>
-        <TR>
-          <TD height=3></TD></TR></TABLE></DIV></TD>
-    <TD width=85>
-      <DIV align=center>
-      <TABLE id=table23 style="BORDER-COLLAPSE: collapse" height=603 
-      cellPadding=0 width=66 border=0>
-        
-        <TR>
-          <TD width=82 height=46><IMG height=46 
-            src="images/top.jpg" width=82 border=0></TD></TR>
-        <TR>
-          <TD width=82 background="images/down.jpg" height=289>
-            <DIV align=center>
-            <TABLE id=table24 style="BORDER-COLLAPSE: collapse" height=260 
-            cellPadding=0 width=53 border=0>
-              
-              <TR>
-                <TD 
-                style="BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: #e6e7e2 1px solid; BORDER-RIGHT-WIDTH: 1px" 
-                height=66><A 
-                  onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('www.web600.net');" 
-                  href="http://www.web600.net/#"><IMG height=51 
-                  src="images/home.gif" width=51 
-              border=0></A></TD></TR>
-              <TR>
-                <TD 
-                style="BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: #e6e7e2 1px solid; BORDER-RIGHT-WIDTH: 1px" 
-                height=66><A title=加入收藏夹 
-                  href="javascript:window.external.AddFavorite('http://www.web600.net','ENTER%20ART(中国网站美工网)')"><IMG 
-                  height=51 src="images/shou.gif" width=51 
-                  border=0></A></TD></TR>
-              <TR>
-                <TD 
-                style="BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: #e6e7e2 1px solid; BORDER-RIGHT-WIDTH: 1px" 
-                height=66><A title=为自己许下一个愿望吧! 
-                  href="#" 
-                  target=_blank><IMG height=54 src="images/qi.gif" 
-                  width=51 border=0></A></TD></TR>
-              <TR>
-                <TD height=66><A title=进入留言社区 
-                  href="#" target=_blank><IMG 
-                  height=54 src="images/liu.gif" width=51 
-                  border=0></A></TD></TR>
-              <TR>
-                <TD height=17></TD></TR></TABLE></DIV></TD></TR>
-        <TR>
-          <TD>　</TD></TR></TABLE></DIV></TD></TR></TABLE></DIV>
-<DIV align=center>
-<TABLE id=table1 style="BORDER-COLLAPSE: collapse" cellPadding=0 width=990 
-border=0>
-  
-  <TR>
-    <TD align=middle width=252>　</TD>
-    <TD vAlign=top align=middle width=212><IMG height=13 
-      src="images/e_copy.gif" width=212 border=0></TD>
-    <TD align=middle><A title=站点地图 href="#" 
-      target=_blank>地 图</A> <FONT color=#666666>|</FONT> <A title=合作伙伴 
-      href="#" target=_blank>伙 伴</A> <FONT 
-      color=#666666>| </FONT><A title=联系我们 
-      href="#" target=_blank>联 系</A><FONT 
-      color=#666666> | </FONT><A title=留言社区 
-      href="#" target=_blank>留 言</A></TD>
-    <TD align=middle width=317>　</TD></TR>
-  <TR>
-    <TD align=middle width=252 height=14></TD>
-    <TD align=middle width=212 height=14></TD>
-    <TD align=middle height=14></TD>
-    <TD align=middle width=317 height=14></TD></TR></TABLE></DIV>
-</BODY></HTML>
+}
 
-<span style="display:none;">这个模版来自http://BestMoban.Com,更多模版请访问<a href="http://BestMoban.Com">http://BestMoban.Com</a>&nbsp;<a href="http://Moban.17Easy.Com">http://Moban.17Easy.Com</a>&nbsp;<a href="http://www.mb8.cn">http://www.mb8.cn</a></span>
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+ }
+
+@media (min-width: 1200px) {
+	.lefts{
+		height: 1145px;
+	}
+ }
+	</style>
+	<body>
+		<div class="container">
+			<h1 style="text-align: center;font-weight: bold;">简历</h1>
+			<div class="row">
+				<!--
+                	作者：1140756409@qq.com
+                	时间：2018-03-04
+                	描述：左侧栏
+                -->
+				<div class="col-lg-4 color_block" style="background-color:#375C79;border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+					<div  class="lefts" style="text-align: center;margin-top: 20px;margin-left: 20%;margin-right: 20%;">
+						<div style="margin: 0 auto;">
+							<img src="img/me.jpg" style="width:100px;height: 100px;border-radius:50px;">
+						</div>
+						<div style="padding:10px;">
+							张瑞志
+						</div>
+						<div class="base_info">
+							<ul>
+								
+								<li><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;1992年7月</li>
+								<li><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;洪山区风光村</li>
+								<li><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;15172442270</li>
+								<li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;telrob@126.com</li>
+							</ul>
+						</div>
+						<div class="jilen">
+							<div style="font-size: 22px;">
+								<span class="glyphicon glyphicon-compressed"></span>&nbsp;&nbsp;&nbsp;技能特长
+							</div>
+							<ul>
+								<li>
+									spring mvc
+								</li>
+								<li>
+									MyBatis
+								</li>
+								<li>
+									Mysql
+								</li>
+								<li>
+									Spring boot
+								</li>
+								<li>
+									Redis
+								</li>
+								<li>
+									Linux
+								</li>
+								<li>
+									Dubbo
+								</li>
+							</ul>
+						</div>
+						<div class="love">
+							<div style="font-size: 22px;">
+								<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;&nbsp;业余爱好
+							</div>
+							<ul>
+								<li><span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;&nbsp;跑步</li>
+								<li><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;&nbsp;&nbsp;爬山</li>
+								<li><span class="glyphicon glyphicon-dashboard"></span>&nbsp;&nbsp;&nbsp;单片机diy</li>
+								<li><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;&nbsp;看书</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<!--
+                	作者：1140756409@qq.com
+                	时间：2018-03-04
+                	描述：右侧栏
+                -->
+				<div class="col-lg-8" style="background-color: #F0F0F0;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+					<div class="content">
+						<ul>
+							<li>
+								<div class="title">
+									<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<div class="text">教育背景</div>
+								</div>
+								<div class="context">
+									<ul>
+										<li class="left">张瑞志</li>
+										<li class="left">男</li>
+										<li class="left">26</li>
+										<li class="left">本科</li>
+										<li class="left">计算机科学与技术</li>
+										<li class="left">在职</li>
+									</ul>
+								</div>
+								
+							</li>
+							<li>
+								<div class="title">
+									<span class="glyphicon glyphicon-folder-close"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<div class="text">工作经验</div>
+								</div>
+								<div class="context"  style="height: 60px;">
+									<ul>
+										<li style="padding-bottom: 0px;">2016年4月 - 2017年8月 &nbsp; &nbsp; &nbsp;武汉联合创想科技有限公司 &nbsp; &nbsp; &nbsp;Java 后台开发 </li>
+										<li>2016年9月 - 至今&nbsp; &nbsp; &nbsp;武汉联合创想科技有限公司 &nbsp; &nbsp; &nbsp;Java 三际物联科技有限公司 </li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="title">
+									<span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<div class="text">技能</div>
+								</div>
+								<div style="padding-top: 10px;padding-bottom: 10px;">
+									<p>
+										精通Java，spring mvc,mybatis,mysql,redis,nginx,srping boot,dubbo,jQuery,bootstrap,linux,ActiveMQ。
+									</p>
+									<p>
+										对大型分布式架构有一定的了解，对mysql数据库读写分离，分表，分库有一定的了解。
+									</p>
+									<p>
+										在项目中能够独立的搭建spring，spring boot项目。曾经部署过maven中央库，项目中集成redis,swaggerUI,对蓝牙开发有一定的了解。
+									</p>
+									<p>
+										精通Linux下Java环境的配置，Apache Tomcat的配置，服务的部署，以及 centreOS下各种软件的安装。配置过Nginx 反向代理，编译配置redis。
+									</p>
+								</div>
+							
+							</li>
+							<li>
+								<div class="title">
+									<span class="glyphicon glyphicon-paperclip"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<div class="text">项目经验</div>
+								</div>
+								<div style="padding-top: 10px;padding-bottom: 10px;">
+									<p>
+										主要项目:沃斯财务，蚂蚁公设，淘客系统，唯的智能锁项目。
+									</p>
+									<div>
+										<p>蚂蚁公社:</p>
+										<p>
+											蚂蚁公社主要是一个三方借贷平台，用户通过该平台提交贷款申请订单，当系统中其他用户有多余的资金时会下购买的订单然后双方通过平台取得联系，进行交易，同时贷款方需要提供部分资金作为平台运维费用和，借款用户的奖励金。该平台前期主要针对pc端开发，后期客户需要又专门针对手机做了一些页面的适配。
+										</p>
+										<p>
+											技术：spring mvc,layer UI,jQuery,mybatis,mysql.
+										</p>
+									</div>
+									<div>
+										<p>
+											唯的智能锁项目:
+										</p>
+										<p>
+											唯的智能锁项目，主要是通过手机的蓝牙来开锁，软件部分主要是android和ios手机通过蓝牙协议连接硬件，然后发送开锁指令，手机中用户登录，通信协议中的秘钥，开锁记录，锁抓拍的图片信息都是通过服务获取的的，后台主要做系统管理，用户信息的管理，智能锁设备的管理，通信秘钥的更新，硬件部分使用了MSP430单片机，和互联网NBIOT通信芯片，当有用户破坏锁设备时设备会抓拍图片，然后发送给后台的UDP服务器，同时设备还会定时的发送开锁记录给UDP服务器，UDP服务器接收到数据后会将数据保存在数据库中。
+										</p>
+										<p>
+											技术:spring mvc,mybatis,mysql,spring boot,jQuery,bootstrap，UDP通信协议，阿里OSS图片服务器。
+										</p>
+									</div>
+									<div>
+										<p>淘客系统</p>
+										<p>
+											淘客系统是针对淘宝推广运应而生的产品，开发的产品有“点滴购”，“点滴淘”，“收券吧”，“更好甄选”项目中根据阿里妈妈淘客系统抓取有优惠券的订单，然后存放到商品库中，同时根据商品生成淘口令，当用户购买时就会在阿里妈妈中生成订单，每个淘客会专门生成一个推广位id,当用户使用app推广商品后，淘宝会根据订单返回一定的奖励金，系统拿出部分奖励金作为平台运行的资金，剩下的部分分给推广的用户，同时为了鼓励用户推广，当用户邀请其他用户参与后其他用户转起奖励金的同时该用户也能够获取到部分。由于该系统中订单的数量比较大并且订单信息一般是不会改变的，所以订单的信息会直接保存在redis中，这样也便于查找商品，为了模糊查询商品方便使用了阿里的opensearch，它能有加快查询搜索，同时也支持排序功能。项目中同时将后台管理系统和手机app系统分开，后台使用spring mvc框架，app端使用spring boot框架，并在后台使用nginx做负载均衡，减小服务器的压力，同时对数据库做读写分离，加快查询速率。
+										</p>
+										<p>技术：spring mvc,mybatis,mysql,redis,ngnix,bootstrap,spring boot.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
