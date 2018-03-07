@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+		<script type="text/javascript" src="js/html2canvas.js" ></script>
+		<script type="text/javascript" src="js/jspdf.debug.js" ></script>
+	</head>
+	<body>
+		<p class="pdf-wrapper">HTML content...<h1>中文</h1>
+			<div style="width:100px;height:100px;background-color: #f00;;"></div>
+		</p>
+	</body>
+	 <script type="text/javascript">
+        var pdf = new jsPDF('p','pt','a4');
+        pdf.internal.scaleFactor = 1;
+        var options = {
+             pagesplit: true
+        };
+
+        //$('.pdf-wrapper')
+        pdf.addHTML(document.body,options,function() {
+            pdf.save('web1111.pdf');
+        });
+    </script>
+</html>
