@@ -7,8 +7,6 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-		<script type="text/javascript" src="js/html2canvas.js" ></script>
-		<script type="text/javascript" src="js/jspdf.debug.js" ></script>
 	</head>
 	<style>
 		.color_block{
@@ -77,13 +75,12 @@
 		}
 		.content .title .text{
 			display: inline-block;
-			width:92%;
+			width:85%;
 			color: #555;
 			padding-bottom: 3px;
 			border-bottom: 1px solid #999;
 		}
 		.content .context ul{
-			height: 10px;
 			padding: 0px;
 		}
 		.content .context ul .left{
@@ -94,11 +91,33 @@
 		}
 		
 @media (max-width: 767px) {
-
+	.color_block{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.right_block{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	
+	.color_block{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.right_block{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -107,7 +126,7 @@
 
 @media (min-width: 1200px) {
 	.lefts{
-		height: 1145px;
+		height: 1171px;
 	}
  }
 	</style>
@@ -184,7 +203,7 @@
                 	时间：2018-03-04
                 	描述：右侧栏
                 -->
-				<div class="col-lg-8" style="background-color: #F0F0F0;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+				<div class="col-lg-8 right_block" style="background-color: #F0F0F0;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
 					<div class="content">
 						<ul>
 							<li>
@@ -193,14 +212,8 @@
 									<div class="text">教育背景</div>
 								</div>
 								<div class="context">
-									<ul>
-										<li class="left">张瑞志</li>
-										<li class="left">男</li>
-										<li class="left">26</li>
-										<li class="left">本科</li>
-										<li class="left">计算机科学与技术</li>
-										<li class="left">在职</li>
-									</ul>
+									<div style="padding-top:20px;padding-left: 20px;padding-right: 20px;">张瑞志&nbsp;&nbsp;&nbsp;&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;26&nbsp;&nbsp;&nbsp;&nbsp;
+									本科 &nbsp;&nbsp;&nbsp;&nbsp;计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;在职</div>
 								</div>
 								
 							</li>
